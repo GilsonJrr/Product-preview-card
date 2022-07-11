@@ -1,0 +1,159 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Cream);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productImgMobile {
+  width: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.productImgDesk {
+  width: 0px;
+}
+
+.bottomCard {
+  width: 90%;
+  background-color: var(--White);
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+h1 {
+  font-family: Fraunces;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: var(--Verydarkblue);
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+  color: var(--Darkgrayishblue);
+}
+
+p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--Darkgrayishblue);
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-family: Fraunces;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 29px;
+  color: var(--Darkcyan);
+  margin-right: 30px;
+}
+
+h4 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--Darkgrayishblue);
+  text-decoration: line-through;
+}
+
+.value {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  width: 100%;
+  background-color: var(--Darkcyan);
+  padding: 15px;
+  border-radius: 10px;
+  color: var(--White);
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+button img {
+  margin-right: 10px;
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    max-width: 600px;
+    flex-direction: row;
+  }
+  .productImgMobile {
+    width: 0px;
+  }
+
+  .productImgDesk {
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .bottomCard {
+    height: 100%;
+    width: 50%;
+    background-color: var(--White);
+    padding: 0px 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
